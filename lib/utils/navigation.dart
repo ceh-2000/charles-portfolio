@@ -26,8 +26,8 @@ class NavigationButtons extends StatelessWidget {
               onPressed: () {
                 Navigator.of(context).push(
                   PageRouteBuilder(
-                    transitionDuration: const Duration(milliseconds: 0),
-                    reverseTransitionDuration: const Duration(milliseconds: 0),
+                    transitionDuration: const Duration(milliseconds: 500),
+                    reverseTransitionDuration: const Duration(milliseconds: 500),
                     pageBuilder: (context, animation, secondaryAnimation) =>
                         const DirectingPage(),
                     transitionsBuilder: (_, __, ___, child) => child,
@@ -50,8 +50,8 @@ class NavigationButtons extends StatelessWidget {
               onPressed: () {
                 Navigator.of(context).push(
                   PageRouteBuilder(
-                    transitionDuration: const Duration(milliseconds: 0),
-                    reverseTransitionDuration: const Duration(milliseconds: 0),
+                    transitionDuration: const Duration(milliseconds: 500),
+                    reverseTransitionDuration: const Duration(milliseconds: 500),
                     pageBuilder: (context, animation, secondaryAnimation) =>
                         const MusicPage(),
                     transitionsBuilder: (_, __, ___, child) => child,
@@ -74,8 +74,8 @@ class NavigationButtons extends StatelessWidget {
               onPressed: () {
                 Navigator.of(context).push(
                   PageRouteBuilder(
-                    transitionDuration: const Duration(milliseconds: 0),
-                    reverseTransitionDuration: const Duration(milliseconds: 0),
+                    transitionDuration: const Duration(milliseconds: 500),
+                    reverseTransitionDuration: const Duration(milliseconds: 500),
                     pageBuilder: (context, animation, secondaryAnimation) =>
                         const VideoPage(),
                     transitionsBuilder: (_, __, ___, child) => child,
@@ -98,8 +98,8 @@ class NavigationButtons extends StatelessWidget {
               onPressed: () {
                 Navigator.of(context).push(
                   PageRouteBuilder(
-                    transitionDuration: const Duration(milliseconds: 0),
-                    reverseTransitionDuration: const Duration(milliseconds: 0),
+                    transitionDuration: const Duration(milliseconds: 500),
+                    reverseTransitionDuration: const Duration(milliseconds: 500),
                     pageBuilder: (context, animation, secondaryAnimation) =>
                         const OtherPage(),
                     transitionsBuilder: (_, __, ___, child) => child,

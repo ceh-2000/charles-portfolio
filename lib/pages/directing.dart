@@ -12,22 +12,148 @@ class DirectingPage extends StatelessWidget {
       child: Scaffold(
         backgroundColor: Colors.transparent, // IMPORTANT
         body: Center(
-          child: Row(
-            children: [
-              Expanded(
-                child: Center(child: NavigationButtons()),
-              ),
-Expanded(
-                child: Text(
-                  "directing here",
-                  style: GoogleFonts.bebasNeue(
-                    fontSize: 96,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.amber,
-                    letterSpacing: 3,
+          child: Padding(
+            padding: const EdgeInsets.all(50),
+            child: Row(
+              children: [
+                Flexible(flex: 1, child: Center(child: NavigationButtons())),
+                Flexible(
+                  flex: 1,
+                  child: SingleChildScrollView(
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            SizedBox(
+                              width: 180,
+                              child: Container(
+                                padding: const EdgeInsets.all(8),
+                                decoration: BoxDecoration(
+                                  border: Border.all(
+                                    color: Colors.white,
+                                    width: 4,
+                                  ),
+                                ),
+                                child: AspectRatio(
+                                  aspectRatio: 3 / 4,
+                                  child: Image.asset(
+                                    'assets/images/directing_1.jpg',
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            SizedBox(width: 100),
+                          ],
+                        ),
+                        SizedBox(height: 50),
+                        Row(
+                          children: [
+                            SizedBox(width: 100),
+                            SizedBox(
+                              width: 180,
+                              child: Container(
+                                padding: const EdgeInsets.all(8),
+                                decoration: BoxDecoration(
+                                  border: Border.all(
+                                    color: Colors.white,
+                                    width: 4,
+                                  ),
+                                ),
+                                child: AspectRatio(
+                                  aspectRatio: 3 / 4,
+                                  child: Image.asset(
+                                    'assets/images/directing_2.jpg',
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        SizedBox(height: 50),
+
+                        Row(
+                          children: [
+                            SizedBox(
+                              width: 180,
+                              child: Container(
+                                padding: const EdgeInsets.all(8),
+                                decoration: BoxDecoration(
+                                  border: Border.all(
+                                    color: Colors.white,
+                                    width: 4,
+                                  ),
+                                ),
+                                child: AspectRatio(
+                                  aspectRatio: 3 / 4,
+                                  child: Image.asset(
+                                    'assets/images/directing_3.jpg',
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            SizedBox(width: 100),
+                          ],
+                        ),
+                        SizedBox(height: 50),
+
+                        Row(
+                          children: [
+                            SizedBox(width: 100),
+                            SizedBox(
+                              width: 180,
+                              child: Container(
+                                padding: const EdgeInsets.all(8),
+                                decoration: BoxDecoration(
+                                  border: Border.all(
+                                    color: Colors.white,
+                                    width: 4,
+                                  ),
+                                ),
+                                child: AspectRatio(
+                                  aspectRatio: 3 / 4,
+                                  child: Image.asset(
+                                    'assets/images/directing_4.jpg',
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        SizedBox(height: 50),
+                        Row(
+                          children: [
+                            SizedBox(
+                              width: 180,
+                              child: Container(
+                                padding: const EdgeInsets.all(8),
+                                decoration: BoxDecoration(
+                                  border: Border.all(
+                                    color: Colors.white,
+                                    width: 4,
+                                  ),
+                                ),
+                                child: AspectRatio(
+                                  aspectRatio: 3 / 4,
+                                  child: Image.asset(
+                                    'assets/images/directing_5.jpg',
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            SizedBox(width: 100),
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
                 ),
-              ),             ],
+              ],
+            ),
           ),
         ),
       ),
