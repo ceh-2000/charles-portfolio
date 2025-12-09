@@ -54,7 +54,14 @@ children: [
           print("Pressed!");
         },
       ),
-
+Container(
+  decoration: BoxDecoration(
+    image: DecorationImage(
+      image: AssetImage('assets/images/space.jpg'),
+      fit: BoxFit.cover,
+    ),
+  ),
+)
         ],
       )
       
