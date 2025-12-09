@@ -113,15 +113,14 @@ class HomePage extends StatelessWidget {
                                 ),
                                 const SizedBox(height: 18),
 
-                                // BODY TEXT (ITALIC, RIGHT-ALIGNED LIKE YOUR MOCK)
                                 Text(
                                   'My name is Charles Heinbaugh, and I make lots of things that intend either to tell stories or make audiences feel something new.\n\n'
                                   'I center empathy, experimentation and collaboration in every project I work on, even (and especially) the dumb, bullshit ones! \n\n'
                                   'Originally from Springfield, Virginia, I am studying to complete my Bachelor of Arts in Directing with the International Performance Ensemble.',
                                   textAlign: TextAlign.left,
                                   style: GoogleFonts.montserrat(
-                                    fontSize: 12,
-                                    fontStyle: FontStyle.italic,
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.bold,
                                     height: 1.4,
                                   ),
                                 ),
