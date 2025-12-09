@@ -28,7 +28,8 @@ class DirectingPage extends StatelessWidget {
                             SizedBox(
                               width: 180,
                               child: ClickableImageLink(
-                                imagePath: 'assets/images/directing_lehman_trilogy.jpg',
+                                imagePath:
+                                    'assets/images/directing_lehman_trilogy.jpg',
                                 url: 'https://youtu.be/vWuS7UYfj2o',
                               ),
                             ),
@@ -42,7 +43,8 @@ class DirectingPage extends StatelessWidget {
                             SizedBox(
                               width: 180,
                               child: ClickableImageLink(
-                                imagePath: 'assets/images/directing_tales_from_the_rift.jpg',
+                                imagePath:
+                                    'assets/images/directing_tales_from_the_rift.jpg',
                                 url: 'https://vimeo.com/649702788',
                               ),
                             ),
@@ -52,26 +54,28 @@ class DirectingPage extends StatelessWidget {
 
                         Row(
                           children: [
-SizedBox(
+                            SizedBox(
                               width: 180,
                               child: ClickableImageLink(
-                                imagePath: 'assets/images/directing_seagull.jpg',
-                                url: 'https://charlesheinbaugh.com',
+                                imagePath:
+                                    'assets/images/directing_seagull.jpg',
+                                url: '',
                               ),
                             ),
                             SizedBox(width: 100),
                           ],
                         ),
                         SizedBox(height: 50),
-
                         Row(
                           children: [
                             SizedBox(width: 100),
                             SizedBox(
                               width: 180,
                               child: ClickableImageLink(
-                                imagePath: 'assets/images/directing_war_of_worlds.jpg',
-                                url: 'https://www.youtube.com/watch?v=XquIFZqwg54',
+                                imagePath:
+                                    'assets/images/directing_war_of_worlds.jpg',
+                                url:
+                                    'https://www.youtube.com/watch?v=XquIFZqwg54',
                               ),
                             ),
                           ],
@@ -82,8 +86,10 @@ SizedBox(
                             SizedBox(
                               width: 180,
                               child: ClickableImageLink(
-                                imagePath: 'assets/images/directing_future_today.jpg',
-                                url: 'https://www.youtube.com/watch?v=GOTPfDIZ4Uc',
+                                imagePath:
+                                    'assets/images/directing_future_today.jpg',
+                                url:
+                                    'https://www.youtube.com/watch?v=GOTPfDIZ4Uc',
                               ),
                             ),
                             SizedBox(width: 100),
