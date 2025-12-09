@@ -156,7 +156,7 @@ class HomePage extends StatelessWidget {
                               ),
                               pageBuilder:
                                   (context, animation, secondaryAnimation) =>
-                                      const DirectingPage(),
+                                       DirectingPage(),
                               transitionsBuilder:
                                   (
                                     context,

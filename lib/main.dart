@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 import 'pages/home.dart';
-import 'pages/directing.dart';
-import 'pages/music.dart';
-import 'pages/video.dart';
-import 'pages/other.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,12 +28,8 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
-
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: HomePage(),
-    
-    );
+    return Scaffold(body: HomePage());
   }
 }
