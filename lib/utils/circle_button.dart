@@ -25,10 +25,36 @@ class CircleTextButton extends StatelessWidget {
       height: size,
       child: ElevatedButton(
         onPressed: onPressed,
-        style: ElevatedButton.styleFrom(
-          shape: const CircleBorder(),
-          padding: EdgeInsets.zero,
-          backgroundColor: backgroundColor,
+        style: ButtonStyle(
+          shape: MaterialStateProperty.all(const CircleBorder()),
+          padding: MaterialStateProperty.all(EdgeInsets.zero),
+
+          // Background hover color
+          backgroundColor: MaterialStateProperty.resolveWith<Color>(
+            (states) {
+              if (states.contains(MaterialState.hovered)) {
+                return backgroundColor.withOpacity(0.9);
+              }
+              return backgroundColor;
+            },
+          ),
+
+          // 🌟 WHITE SHADOW ON HOVER 🌟
+          elevation: MaterialStateProperty.resolveWith<double>(
+            (states) {
+              if (states.contains(MaterialState.hovered)) return 20; // glow strength
+              return 6; // normal slight elevation
+            },
+          ),
+
+          shadowColor: MaterialStateProperty.resolveWith<Color>(
+            (states) {
+              if (states.contains(MaterialState.hovered)) return Colors.white;
+              return Colors.black54; // default shadow
+            },
+          ),
+
+          animationDuration: const Duration(milliseconds: 150),
         ),
         child: Center(
           child: Column(

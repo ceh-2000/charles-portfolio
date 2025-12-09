@@ -62,10 +62,7 @@ class HomePage extends StatelessWidget {
                     margin: const EdgeInsets.all(32),
                     child: Padding(
                       padding: const EdgeInsets.all(24),
-                      child: LayoutBuilder(
-                        builder: (context, constraints) {
-                          final isNarrow = constraints.maxWidth < 700;
-                          final content = Row(
+                      child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               SizedBox(
@@ -81,7 +78,7 @@ class HomePage extends StatelessWidget {
                                   child: AspectRatio(
                                     aspectRatio: 3 / 4,
                                     child: Image.asset(
-                                      'assets/images/charles.jpeg',
+                                      'assets/images/charles.png',
                                       fit: BoxFit.cover,
                                     ),
                                   ),
@@ -97,7 +94,7 @@ class HomePage extends StatelessWidget {
                                     Text(
                                       'WELCOME',
                                       style: GoogleFonts.anton(
-                                        fontSize: 24,
+                                        fontSize: 36,
                                         fontStyle: FontStyle.italic,
                                         letterSpacing: 4,
                                         color: Colors.black,
@@ -128,64 +125,55 @@ class HomePage extends StatelessWidget {
                                 ),
                               ),
                             ],
-                          );
-
-                          // On narrow screens, stack vertically instead of side-by-side
-                          return isNarrow
-                              ? Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Expanded(child: content), // simple reuse
-                                  ],
-                                )
-                              : content;
-                        },
                       ),
                     ),
                   ),
                 ),
               ),
-              SizedBox(height: 20.0),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  CircleTextButton(
-                    text: 'Play',
-                    icon: Icons.play_arrow,
-                    backgroundColor: Colors.red,
+                  Padding(
+                      padding: const EdgeInsets.all(12),child: CircleTextButton(
+                    text: 'Directing',
+                    icon: Icons.movie,
+backgroundColor: const Color(0xFF870000),
                     onPressed: () {
                       print("Pressed!");
                     },
-                  ),
-                  CircleTextButton(
-                    text: 'Play',
-                    icon: Icons.play_arrow,
-                    backgroundColor: Colors.yellow,
+                  )),
+                  Padding(
+                      padding: const EdgeInsets.all(12),child: CircleTextButton(
+                    text: 'Music',
+                    icon: Icons.music_note,
+backgroundColor: const Color(0xFF5400be),
                     onPressed: () {
                       print("Pressed!");
                     },
-                  ),
+                  )),
                 ],
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  CircleTextButton(
-                    text: 'Play',
-                    icon: Icons.play_arrow,
-                    backgroundColor: Colors.green,
+                  Padding(
+                      padding: const EdgeInsets.all(12),child: CircleTextButton(
+                    text: 'Video',
+                    icon: Icons.video_library,
+backgroundColor: const Color(0xFF207800),
                     onPressed: () {
                       print("Pressed!");
                     },
-                  ),
-                  CircleTextButton(
-                    text: 'Play',
-                    icon: Icons.play_arrow,
-                    backgroundColor: Colors.blue,
+                  )),
+                  Padding(
+                      padding: const EdgeInsets.all(12),child: CircleTextButton(
+                    text: 'Other',
+                    icon: Icons.bubble_chart,
+backgroundColor: const Color(0xFF93371d),
                     onPressed: () {
                       print("Pressed!");
                     },
-                  ),
+                  )),
                 ],
               ),
             ],
