@@ -2,15 +2,10 @@ import 'package:flutter/material.dart';
 import '../utils/background.dart';
 import '../utils/navigation.dart';
 import 'package:url_launcher/url_launcher.dart';
+import '../utils/clickable_image_link.dart';
 
 class DirectingPage extends StatelessWidget {
   DirectingPage({super.key});
-  final Uri _urlFutureToday = Uri.parse(
-    'https://www.youtube.com/watch?v=GOTPfDIZ4Uc?t=39m25s',
-  );
-  final Uri _urlLehmanTrilogy = Uri.parse(
-    'https://studio.youtube.com/video/vWuS7UYfj2o/edit',
-  );
 
   @override
   Widget build(BuildContext context) {
@@ -32,21 +27,9 @@ class DirectingPage extends StatelessWidget {
                           children: [
                             SizedBox(
                               width: 180,
-                              child: Container(
-                                padding: const EdgeInsets.all(8),
-                                decoration: BoxDecoration(
-                                  border: Border.all(
-                                    color: Colors.white,
-                                    width: 4,
-                                  ),
-                                ),
-                                child: AspectRatio(
-                                  aspectRatio: 3 / 4,
-                                  child: Image.asset(
-                                    'assets/images/directing_future_today.jpg',
-                                    fit: BoxFit.cover,
-                                  ),
-                                ),
+                              child: ClickableImageLink(
+                                imagePath: 'assets/images/directing_lehman_trilogy.jpg',
+                                url: 'https://youtu.be/vWuS7UYfj2o',
                               ),
                             ),
                             SizedBox(width: 100),
@@ -58,21 +41,9 @@ class DirectingPage extends StatelessWidget {
                             SizedBox(width: 100),
                             SizedBox(
                               width: 180,
-                              child: Container(
-                                padding: const EdgeInsets.all(8),
-                                decoration: BoxDecoration(
-                                  border: Border.all(
-                                    color: Colors.white,
-                                    width: 4,
-                                  ),
-                                ),
-                                child: AspectRatio(
-                                  aspectRatio: 3 / 4,
-                                  child: Image.asset(
-                                    'assets/images/directing_lehman_trilogy.jpg',
-                                    fit: BoxFit.cover,
-                                  ),
-                                ),
+                              child: ClickableImageLink(
+                                imagePath: 'assets/images/directing_tales_from_the_rift.jpg',
+                                url: 'https://vimeo.com/649702788',
                               ),
                             ),
                           ],
@@ -81,23 +52,11 @@ class DirectingPage extends StatelessWidget {
 
                         Row(
                           children: [
-                            SizedBox(
+SizedBox(
                               width: 180,
-                              child: Container(
-                                padding: const EdgeInsets.all(8),
-                                decoration: BoxDecoration(
-                                  border: Border.all(
-                                    color: Colors.white,
-                                    width: 4,
-                                  ),
-                                ),
-                                child: AspectRatio(
-                                  aspectRatio: 3 / 4,
-                                  child: Image.asset(
-                                    'assets/images/directing_seagull.jpg',
-                                    fit: BoxFit.cover,
-                                  ),
-                                ),
+                              child: ClickableImageLink(
+                                imagePath: 'assets/images/directing_seagull.jpg',
+                                url: 'https://charlesheinbaugh.com',
                               ),
                             ),
                             SizedBox(width: 100),
@@ -110,37 +69,9 @@ class DirectingPage extends StatelessWidget {
                             SizedBox(width: 100),
                             SizedBox(
                               width: 180,
-                              child: GestureDetector(
-                                onTap: () async {
-                                  final url = Uri.parse(
-                                    "https://vimeo.com/649702788",
-                                  );
-
-                                  if (await canLaunchUrl(url)) {
-                                    await launchUrl(
-                                      url,
-                                      mode: LaunchMode.externalApplication,
-                                    );
-                                  } else {
-                                    throw "Could not launch $url";
-                                  }
-                                },
-                                child: Container(
-                                  padding: const EdgeInsets.all(8),
-                                  decoration: BoxDecoration(
-                                    border: Border.all(
-                                      color: Colors.white,
-                                      width: 4,
-                                    ),
-                                  ),
-                                  child: AspectRatio(
-                                    aspectRatio: 3 / 4,
-                                    child: Image.asset(
-                                      'assets/images/directing_tales_from_the_rift.jpg',
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                ),
+                              child: ClickableImageLink(
+                                imagePath: 'assets/images/directing_war_of_worlds.jpg',
+                                url: 'https://www.youtube.com/watch?v=XquIFZqwg54',
                               ),
                             ),
                           ],
@@ -150,21 +81,9 @@ class DirectingPage extends StatelessWidget {
                           children: [
                             SizedBox(
                               width: 180,
-                              child: Container(
-                                padding: const EdgeInsets.all(8),
-                                decoration: BoxDecoration(
-                                  border: Border.all(
-                                    color: Colors.white,
-                                    width: 4,
-                                  ),
-                                ),
-                                child: AspectRatio(
-                                  aspectRatio: 3 / 4,
-                                  child: Image.asset(
-                                    'assets/images/directing_war_of_worlds.jpg',
-                                    fit: BoxFit.cover,
-                                  ),
-                                ),
+                              child: ClickableImageLink(
+                                imagePath: 'assets/images/directing_future_today.jpg',
+                                url: 'https://www.youtube.com/watch?v=GOTPfDIZ4Uc',
                               ),
                             ),
                             SizedBox(width: 100),
