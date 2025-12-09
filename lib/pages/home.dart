@@ -7,7 +7,13 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: CircleTextButton(
+      child: 
+      Column(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+CircleTextButton(
         text: 'Play',
         icon: Icons.play_arrow,
         backgroundColor: Colors.red,
@@ -15,6 +21,43 @@ class HomePage extends StatelessWidget {
           print("Pressed!");
         },
       ),
+          CircleTextButton(
+        text: 'Play',
+        icon: Icons.play_arrow,
+        backgroundColor: Colors.red,
+        onPressed: () {
+          print("Pressed!");
+        },
+      ),],),
+Row(mainAxisAlignment: MainAxisAlignment.center,
+children: [
+  CircleTextButton(
+        text: 'Play',
+        icon: Icons.play_arrow,
+        backgroundColor: Colors.red,
+        onPressed: () {
+          print("Pressed!");
+        },
+      ), CircleTextButton(
+        text: 'Play',
+        icon: Icons.play_arrow,
+        backgroundColor: Colors.red,
+        onPressed: () {
+          print("Pressed!");
+        },
+      ),
+], ), CircleTextButton(
+        text: 'Play',
+        icon: Icons.play_arrow,
+        backgroundColor: Colors.red,
+        onPressed: () {
+          print("Pressed!");
+        },
+      ),
+
+        ],
+      )
+      
     );
   }
 }
