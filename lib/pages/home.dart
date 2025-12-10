@@ -7,6 +7,7 @@ import 'music.dart';
 import 'video.dart';
 import 'other.dart';
 import 'directing.dart';
+import '../utils/resume_link.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -133,6 +134,11 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
               ),
+              SizedBox(height: 10),
+              ResumeLink(
+                url:
+                    "https://docs.google.com/document/d/1P4zVfErLiaxV-URkZJSftpfbioJ1O_yxGyxk6rxzvZE/edit?usp=sharing",
+              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -155,7 +161,7 @@ class HomePage extends StatelessWidget {
                               ),
                               pageBuilder:
                                   (context, animation, secondaryAnimation) =>
-                                       DirectingPage(),
+                                      DirectingPage(),
                               transitionsBuilder:
                                   (
                                     context,
