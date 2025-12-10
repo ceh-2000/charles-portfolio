@@ -4,6 +4,7 @@ import '../pages/directing.dart';
 import '../pages/music.dart';
 import '../pages/video.dart';
 import '../pages/other.dart';
+import '../pages/home.dart';
 import 'circle_button.dart';
 
 class NavigationButtons extends StatelessWidget {
@@ -14,6 +15,23 @@ class NavigationButtons extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
+        IconButton(
+          icon: const Icon(Icons.home),
+          color: Colors.white,
+          iconSize: 32,
+          onPressed: () {
+            Navigator.of(context).pushAndRemoveUntil(
+              PageRouteBuilder(
+                transitionDuration: Duration.zero,
+                reverseTransitionDuration: Duration.zero,
+                pageBuilder: (_, __, ___) => const HomePage(),
+                transitionsBuilder: (_, __, ___, child) =>
+                    child, // no animation
+              ),
+              (route) => false, // clears backstack so you're truly "home"
+            );
+          },
+        ),
         // ----------- DIRECTING ----------------
         Padding(
           padding: const EdgeInsets.all(12),
