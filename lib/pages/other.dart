@@ -35,7 +35,7 @@ class OtherPage extends StatelessWidget {
                                   ),
                                 ),
                                 child: Image.asset(
-                                  'assets/images/visual_1.jpg',
+                                  'images/visual_1.jpg',
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -58,7 +58,7 @@ class OtherPage extends StatelessWidget {
                                   ),
                                 ),
                                 child: Image.asset(
-                                  'assets/images/visual_2.jpg',
+                                  'images/visual_2.jpg',
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -80,7 +80,7 @@ class OtherPage extends StatelessWidget {
                                   ),
                                 ),
                                 child: Image.asset(
-                                  'assets/images/visual_3.jpg',
+                                  'images/visual_3.jpg',
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -103,7 +103,7 @@ class OtherPage extends StatelessWidget {
                                   ),
                                 ),
                                 child: Image.asset(
-                                  'assets/images/visual_4.jpg',
+                                  'images/visual_4.jpg',
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -124,51 +124,7 @@ class OtherPage extends StatelessWidget {
                                   ),
                                 ),
                                 child: Image.asset(
-                                  'assets/images/visual_5.jpg',
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
-                            ),
-                            SizedBox(width: 100),
-                          ],
-                        ),
-                        SizedBox(height: 50),
-                        Row(
-                          children: [
-                            SizedBox(width: 100),
-                            SizedBox(
-                              width: 180,
-                              child: Container(
-                                padding: const EdgeInsets.all(8),
-                                decoration: BoxDecoration(
-                                  border: Border.all(
-                                    color: Colors.white,
-                                    width: 4,
-                                  ),
-                                ),
-                                child: Image.asset(
-                                  'assets/images/visual_6.jpg',
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                        SizedBox(height: 50),
-                        Row(
-                          children: [
-                            SizedBox(
-                              width: 180,
-                              child: Container(
-                                padding: const EdgeInsets.all(8),
-                                decoration: BoxDecoration(
-                                  border: Border.all(
-                                    color: Colors.white,
-                                    width: 4,
-                                  ),
-                                ),
-                                child: Image.asset(
-                                  'assets/images/visual_7.jpg',
+                                  'images/visual_5.jpg',
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -191,7 +147,7 @@ class OtherPage extends StatelessWidget {
                                   ),
                                 ),
                                 child: Image.asset(
-                                  'assets/images/visual_8.jpg',
+                                  'images/visual_6.jpg',
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -212,7 +168,7 @@ class OtherPage extends StatelessWidget {
                                   ),
                                 ),
                                 child: Image.asset(
-                                  'assets/images/visual_9.jpg',
+                                  'images/visual_7.jpg',
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -235,7 +191,51 @@ class OtherPage extends StatelessWidget {
                                   ),
                                 ),
                                 child: Image.asset(
-                                  'assets/images/visual_10.jpg',
+                                  'images/visual_8.jpg',
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        SizedBox(height: 50),
+                        Row(
+                          children: [
+                            SizedBox(
+                              width: 180,
+                              child: Container(
+                                padding: const EdgeInsets.all(8),
+                                decoration: BoxDecoration(
+                                  border: Border.all(
+                                    color: Colors.white,
+                                    width: 4,
+                                  ),
+                                ),
+                                child: Image.asset(
+                                  'images/visual_9.jpg',
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                            ),
+                            SizedBox(width: 100),
+                          ],
+                        ),
+                        SizedBox(height: 50),
+                        Row(
+                          children: [
+                            SizedBox(width: 100),
+                            SizedBox(
+                              width: 180,
+                              child: Container(
+                                padding: const EdgeInsets.all(8),
+                                decoration: BoxDecoration(
+                                  border: Border.all(
+                                    color: Colors.white,
+                                    width: 4,
+                                  ),
+                                ),
+                                child: Image.asset(
+                                  'images/visual_10.jpg',
                                   fit: BoxFit.cover,
                                 ),
                               ),
