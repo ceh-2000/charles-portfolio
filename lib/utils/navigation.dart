@@ -16,8 +16,7 @@ class NavigationButtons extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         IconButton(
-          icon: const Icon(Icons.home),
-          color: Colors.white,
+          icon: const Icon(Icons.home, color: Colors.white),
           iconSize: 32,
           onPressed: () {
             Navigator.of(context).pushAndRemoveUntil(
