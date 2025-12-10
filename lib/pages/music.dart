@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../utils/background.dart';
 import '../utils/navigation.dart';
-import 'package:google_fonts/google_fonts.dart';
+import '../utils/audio_player.dart';
 
 class MusicPage extends StatelessWidget {
   const MusicPage({super.key});
@@ -14,20 +14,11 @@ class MusicPage extends StatelessWidget {
         body: Center(
           child: Row(
             children: [
+              Expanded(child: NavigationButtons()),
               Expanded(
-                child: NavigationButtons(),
+                child: SimpleAudioPlayerPage(),
               ),
-Expanded(
-                child: Text(
-                  "iPod here",
-                  style: GoogleFonts.bebasNeue(
-                    fontSize: 96,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.amber,
-                    letterSpacing: 3,
-                  ),
-                ),
-              ),             ],
+            ],
           ),
         ),
       ),
