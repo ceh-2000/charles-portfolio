@@ -1,5 +1,5 @@
+import 'package:charles_portfolio/utils/app_scaffold.dart';
 import 'package:flutter/material.dart';
-import '../utils/background.dart';
 import '../utils/navigation.dart';
 import '../utils/youtube_playlist_player.dart';
 
@@ -8,7 +8,7 @@ class VideoPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AppBackground(
+    return AppScaffold(
       child: Scaffold(
         backgroundColor: Colors.transparent, // IMPORTANT
         body: Center(
@@ -16,9 +16,10 @@ class VideoPage extends StatelessWidget {
             children: [
               Expanded(child: NavigationButtons()),
               Expanded(
-                child: Padding(padding: EdgeInsetsGeometry.all(50),
-                child: SimpleYoutubePlaylistPlayer(),
-                )
+                child: Padding(
+                  padding: EdgeInsetsGeometry.all(50),
+                  child: SimpleYoutubePlaylistPlayer(),
+                ),
               ),
             ],
           ),

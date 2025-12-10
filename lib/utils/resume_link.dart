@@ -40,7 +40,7 @@ class _ResumeLinkState extends State<ResumeLink> {
                 "Resume",
                 style: TextStyle(
                   color: _hovering ? hoverColor : normalColor,
-                  fontSize: 20,
+                  fontSize: 14,
                 ),
               ),
 

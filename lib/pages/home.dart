@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 import '../utils/circle_button.dart';
 import 'package:marquee/marquee.dart';
-import '../utils/background.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'music.dart';
 import 'video.dart';
 import 'other.dart';
 import 'directing.dart';
 import '../utils/resume_link.dart';
+import '../utils/app_scaffold.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return AppBackground(
+    return AppScaffold(
       child: Center(
         child: SingleChildScrollView(
           child: Column(

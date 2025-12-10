@@ -1,18 +1,15 @@
 import 'package:flutter/material.dart';
-import '../utils/background.dart';
 import '../utils/navigation.dart';
-import 'package:url_launcher/url_launcher.dart';
 import '../utils/clickable_image_link.dart';
+import '../utils/app_scaffold.dart';
 
 class DirectingPage extends StatelessWidget {
   DirectingPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return AppBackground(
-      child: Scaffold(
-        backgroundColor: Colors.transparent, // IMPORTANT
-        body: Center(
+    return AppScaffold(
+        child: Center(
           child: Padding(
             padding: const EdgeInsets.all(50),
             child: Row(
@@ -103,7 +100,6 @@ class DirectingPage extends StatelessWidget {
             ),
           ),
         ),
-      ),
     );
   }
 }
