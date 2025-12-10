@@ -137,7 +137,7 @@ class HomePage extends StatelessWidget {
               SizedBox(height: 10),
               ResumeLink(
                 url:
-                    "https://docs.google.com/document/d/1P4zVfErLiaxV-URkZJSftpfbioJ1O_yxGyxk6rxzvZE/edit?usp=sharing",
+                    "https://docs.google.com/document/d/1QtSKhbT4H6Fdsr5HjmScadmgZRsbQHTzsOkNMOpg2-M/edit?tab=t.0",
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
