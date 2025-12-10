@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../utils/background.dart';
 import '../utils/navigation.dart';
-import 'package:google_fonts/google_fonts.dart';
+import '../utils/youtube_playlist_player.dart';
 
 class VideoPage extends StatelessWidget {
   const VideoPage({super.key});
@@ -16,15 +16,9 @@ class VideoPage extends StatelessWidget {
             children: [
               Expanded(child: NavigationButtons()),
               Expanded(
-                child: Text(
-                  "video here",
-                  style: GoogleFonts.bebasNeue(
-                    fontSize: 96,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.amber,
-                    letterSpacing: 3,
-                  ),
-                ),
+                child: Padding(padding: EdgeInsetsGeometry.all(50),
+                child: SimpleYoutubePlaylistPlayer(),
+                )
               ),
             ],
           ),
